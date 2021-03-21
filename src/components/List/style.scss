@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 20px;
+  overflow: hidden;
+  padding: 0px;
+
+  & .item {
+    list-style-type: none;
+    height: 300px;
+    width: auto;
+    margin: 10px;
+
+    & .image {
+      overflow: hidden;
+      height: 300px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .list {
+    & .item {
+      height: 200px;
+
+      & .image {
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .list {
+    & .item {
+      height: 150px;
+
+      & .image {
+        height: 150px;
+      }
+    }
+  }
+}
