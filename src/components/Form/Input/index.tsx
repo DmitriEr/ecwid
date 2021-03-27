@@ -23,10 +23,11 @@ export const Input: React.FC<PropsInterface> = ({
       <input
         type={type}
         value={value}
-        className="input"
+        className="form__input"
         placeholder={description}
         onChange={onChange}
         onKeyDown={onEnter}
+        id={type}
       />
       {children}
     </form>

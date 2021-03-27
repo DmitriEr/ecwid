@@ -60,13 +60,15 @@ export const Form: React.FC<PropsInterface> = ({ setList }) => {
         onChange={onChangeInput}
         onEnter={onEnter}
       >
-        <button onClick={onClick} className="button">Добавить картинку</button>
+        <button onClick={onClick} className="form__button">Добавить картинку</button>
       </Input>
       <Input
         type="file"
         description="Вставьте файл"
         onChange={onChangeFile}
-      />
+      >
+      <label htmlFor="file">Загрузить JSON</label>
+      </Input>
     </div>
   );
 }

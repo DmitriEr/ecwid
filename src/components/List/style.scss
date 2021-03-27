@@ -7,41 +7,43 @@
   margin: 20px;
   overflow: hidden;
   padding: 0px;
+  min-height: 300px;
+  border: solid 1px red;
 
-  & .item {
+  &__item {
     list-style-type: none;
     height: 300px;
     width: auto;
     margin: 10px;
+  }
 
-    & .image {
-      overflow: hidden;
-      height: 300px;
-      width: auto;
-    }
+  &__image {
+    overflow: hidden;
+    height: 300px;
+    width: auto;
   }
 }
 
 @media (max-width: 700px) {
   .list {
-    & .item {
+    &__item {
       height: 200px;
+    }
 
-      & .image {
-        height: 200px;
-      }
+    &__image {
+      height: 200px;
     }
   }
 }
 
 @media (max-width: 450px) {
   .list {
-    & .item {
+    &__item {
       height: 150px;
+    }
 
-      & .image {
-        height: 150px;
-      }
+    &__image {
+      height: 150px;
     }
   }
 }
