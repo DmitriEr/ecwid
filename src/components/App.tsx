@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import { List } from './List';
 import { Form } from './Form';
@@ -11,8 +11,12 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Form setList={setList} />
-      <List list={list} setList={setList} />
+      <header className="header">
+        <Form setList={setList} />
+      </header>
+      <main className="main">
+        <List list={list} setList={setList} />
+      </main>
     </>
   );
 }

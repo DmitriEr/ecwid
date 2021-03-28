@@ -43,8 +43,19 @@ export const List: React.FC<PropsInterface> = ({ list, setList }) => {
       {list.length 
         ? list.map((source, i) => {
           return (
-            <li key={i} className="list__item" onClick={() => onClick(i)}>
-              <img src={source} alt={`picture_${i}`} className="list__image" />
+            <li key={i} className="list__item">
+              <img
+                src={source}
+                alt={`picture_${i}`}
+                className="list__image"
+              />
+              <button
+                onClick={() => onClick(i)}
+                className="list__button"
+                title="Удалить"
+              >
+                x
+              </button>
             </li>
           )
         }) 

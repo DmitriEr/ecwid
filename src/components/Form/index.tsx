@@ -52,7 +52,7 @@ export const Form: React.FC<PropsInterface> = ({ setList }) => {
   }
 
   return (
-    <div className="wrapper">
+    <>
       <Input 
         type="text"
         description="Введите текст"
@@ -60,7 +60,7 @@ export const Form: React.FC<PropsInterface> = ({ setList }) => {
         onChange={onChangeInput}
         onEnter={onEnter}
       >
-        <button onClick={onClick} className="form__button">Добавить картинку</button>
+        <button onClick={onClick} className="form__button">Добавить</button>
       </Input>
       <Input
         type="file"
@@ -69,6 +69,6 @@ export const Form: React.FC<PropsInterface> = ({ setList }) => {
       >
       <label htmlFor="file">Загрузить JSON</label>
       </Input>
-    </div>
+    </>
   );
 }

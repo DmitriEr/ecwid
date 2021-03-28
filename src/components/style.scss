@@ -1,0 +1,23 @@
+@import '../styles/variables.scss';
+
+.header,
+.main {
+  max-width: $max;
+  width: 100%;
+  @extend %displayFlex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 540px) {
+  .header,
+  .main {
+    max-width: $middle;
+  }
+}
+
+@media (max-width: 320px) {
+  .header,
+  .main {
+    max-width: $min;
+  }
+}

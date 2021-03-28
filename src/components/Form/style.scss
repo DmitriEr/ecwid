@@ -1,11 +1,12 @@
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
+@import '../../styles/variables.scss';
 
-@media (max-width: 700px) {
-  .wrapper {
-    flex-wrap: wrap;
-  }
-}
+// .wrapper {
+//   @extend %displayFlex;
+//   flex-wrap: wrap;
+// }
+
+// @media (max-width: 700px) {
+//   .wrapper {
+//     flex-wrap: wrap;
+//   }
+// }

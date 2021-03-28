@@ -1,0 +1,10 @@
+$max: 860px;
+$middle: 540px;
+$min: 320px;
+
+%displayFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

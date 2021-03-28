@@ -1,49 +1,58 @@
+@import '../../styles/variables.scss';
+
 .list {
-  display: flex;
+  @extend %displayFlex;
   justify-content: center;
-  align-items: stretch;
+  min-height: 200px;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 20px;
   overflow: hidden;
   padding: 0px;
-  min-height: 300px;
   border: solid 1px red;
 
   &__item {
     list-style-type: none;
-    height: 300px;
+    height: 200px;
     width: auto;
     margin: 10px;
+    position: relative;
   }
 
   &__image {
     overflow: hidden;
-    height: 300px;
+    height: 200px;
     width: auto;
   }
+
+  &__button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 540px) {
   .list {
     &__item {
-      height: 200px;
+      height: 150px;
     }
 
     &__image {
-      height: 200px;
+      height: 150px;
     }
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 320px) {
   .list {
     &__item {
-      height: 150px;
+      height: 100px;
     }
 
     &__image {
-      height: 150px;
+      height: 100px;
     }
   }
 }
